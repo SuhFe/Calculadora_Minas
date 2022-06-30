@@ -56,8 +56,8 @@ function pushMethod() {
 
 // Requisito 4
 function sortMethod() {
-  let sortCrescente = req4crescente.sort((a,b)=>a-b); //Seu código aqui, manipule a variável sem alterar o nome dela.
-  let sortDecrescente = req4decrscente.sort((a,b)=>a-b); //Seu código aqui, manipule a variável sem alterar o nome dela.
+  let sortCrescente = req4crescente.sort((a,b) => a-b); //manipule a variável sem alterar o nome dela.
+  let sortDecrescente = req4decrscente.sort((a,b) => a-b); //manipule a variável sem alterar o nome dela.
 
 
   req4Crescente.innerHTML = `Sort Crescente[ ${sortCrescente} ]`;//NÃO ALTERAR!
@@ -70,7 +70,6 @@ function arrayPrint() {
     for (let index = 0; index < historicoDeResultado.length; index++) {
        console.log (historicoDeResultado);    
     }
-    //Seu código aqui
 
   req5.innerHTML = `Todas os valores ${historicoDeResultado}`//NÃO ALTERAR!
 }
@@ -78,18 +77,19 @@ function arrayPrint() {
 
 // Requisito 6
 function conditionCase() {
-  //Seu código aqui, descomente para usar a estrutura declarada.
-/*   if () {
-    //Seu código aqui
+let historicoDeResultado = [];
+  if (historicoDeResultado[historicoDeResultado.length - 1] > 20) {
+    console.log (requisito6)
 
     requisito6 = 'maior ou igual a 20';//NÃO ALTERAR!
-    req6.innerHTML = `Condicional if else: ${requisito6}`;//NÃO ALTERAR!  
-  } else {
-    //Seu código aqui
+    req6.innerHTML = `Condicional if else: ${requisito6}`;//NÃO ALTERAR! 
 
+  } else if (historicoDeResultado[historicoDeResultado.length -1] < 20) {
+    console.log (requisito6);
+  
     requisito6 = 'menor que 20';//NÃO ALTERAR!
     req6.innerHTML = `Condicional if else: ${requisito6}`;//NÃO ALTERAR!
-  } */
+  }
 }
 
 
@@ -97,12 +97,11 @@ function conditionCase() {
 function intermediateNumbers() {
   let numeros = [];//NÃO ALTERAR!
 
-  //Seu código aquidescomente para usar a estrutura declarada.
-/*   for () { //Seu código aqui
-    if () {//Seu código aqui
-      numeros //Seu código aqui, manipule a variável sem alterar o nome dela.
+  for (let i =0; i < historicoDeResultado.length; i++) {
+    if (historicoDeResultado[i] >= 10 && historicoDeResultado[i] <= 20) {
+      numeros.push(historicoDeResultado[i])
     }
-  } */
+  }
   return req7.innerHTML = `Numeros entre 10 e 20: ${numeros}`;//NÃO ALTERAR!
 };
 
