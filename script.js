@@ -77,7 +77,6 @@ function arrayPrint() {
 
 // Requisito 6
 function conditionCase() {
-let historicoDeResultado = [];
   if (historicoDeResultado[historicoDeResultado.length - 1] > 20) {
     console.log (requisito6)
 
